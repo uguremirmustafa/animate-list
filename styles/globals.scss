@@ -1,0 +1,72 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+.list {
+  list-style: none;
+  margin: 1rem;
+  .item {
+    cursor: pointer;
+    margin: 2rem auto;
+    width: 400px;
+    background: darkgray;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    .circle {
+      width: 4rem;
+      height: 4rem;
+      padding: 0;
+      margin: 0;
+      background: white;
+      border-radius: 50%;
+    }
+    .text-container {
+      width: 100%;
+      display: grid;
+      gap: 0.3rem;
+      .text {
+        height: 1rem;
+        background: white;
+        border-radius: 0.2rem;
+      }
+      .short {
+        width: 70%;
+      }
+    }
+  }
+  .active {
+    box-shadow: 0 0 10px 2px rgba(black, 0.2);
+    .circle {
+      border-radius: 0.4rem;
+    }
+    .text-container {
+      gap: 1.2rem;
+      .text {
+        height: 1.5rem;
+      }
+    }
+  }
+}

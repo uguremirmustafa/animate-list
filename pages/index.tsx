@@ -10,7 +10,7 @@ const variants = {
     backgroundColor: 'salmon',
   },
   closed: {
-    x: [100, -3, 0],
+    x: 0,
     scale: 1,
   },
 };
